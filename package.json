@@ -1,0 +1,25 @@
+{
+  "name": "org-cloudfunctions",
+  "description": "Cloud Functions",
+  "version": "1.0.0",
+  "dependencies": {
+    "@myorg/common": "file:./local_modules/common",
+    "firebase": "^5.8.4",
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0"
+  },
+  "main": "lib/index.js",
+  "private": true,
+  "devDependencies": {
+    "firebase-tools": "^6.4.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "deploy": "firebase deploy --only functions --project=tuanngo-me"
+  },
+  "engines": {
+    "node": "6"
+  }
+}

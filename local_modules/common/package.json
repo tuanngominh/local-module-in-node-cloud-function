@@ -1,0 +1,16 @@
+{
+  "name": "@myorg/common",
+  "version": "1.0.0",
+  "description": "Common type for org",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^11.9.0",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "prepare": "npm run build"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": false,
+    "declaration": true,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es6"
+    ],
+    "outDir": "./lib"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
